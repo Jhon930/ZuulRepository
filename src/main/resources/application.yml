@@ -1,15 +1,15 @@
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-      - id: person-service
-        uri: lb://person-service
-        predicates:
-        - Path=/person/**
-      - id: account-service
-        uri: lb://account-service
-        predicates:
-        - Path=/account/**
+#spring:
+  #cloud:
+    #gateway:
+      #discovery:
+        #locator:
+          #enabled: true
+      #routes:
+      #- id: person-service
+      #  uri: lb://person-service
+      #  predicates:
+       # - Path=/person/**
+     # - id: account-service
+        #uri: lb://account-service
+       # predicates:
+#- Path=/account/**
